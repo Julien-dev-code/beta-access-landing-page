@@ -1,0 +1,32 @@
+:root {
+    --neutral-0: #FAF8F6;
+    --neutral-200: #F3EDE7;
+    --neutral-500: #49566D;
+    --neutral-900: #172339;
+  }
+body {
+    font-family: epilogue;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 20px;
+}
+.cta-button {
+    padding: 18px 17px 15px 18px;
+    border-radius: 6px;
+    background-color: white;
+    border: 1px solid var(--neutral-900);
+    color: var(--neutral-900);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.16px;
+}
+
+  @media (min-width: 768px) {
+    .container {
+        width: 718px;
+    }
+}
