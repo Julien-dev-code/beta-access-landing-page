@@ -34,6 +34,7 @@ body {
 }
 .hero {
     margin: 20px 20px;
+    margin-top: 60px;
 }
 h1 {
     color: var(--neutral-900);
@@ -52,6 +53,34 @@ h1 {
     font-size: 38px;
     letter-spacing: -0.53px;
 }
+.stats {
+    text-align: center;
+}
+.stats img {
+    margin-top: 40px;
+}
+.stats-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.stats-value {
+    color:var(--neutral-900);
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.5px;
+}
+.stats-label {
+    color: var(--neutral-500);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
 
   @media (min-width: 768px) {
     .container {
