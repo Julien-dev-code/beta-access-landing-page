@@ -6,6 +6,7 @@
   }
 body {
     font-family: epilogue;
+    background-color: var(--neutral-0);
 }
 .header-container {
     display: flex;
@@ -13,16 +14,43 @@ body {
     justify-content: space-between;
     margin: 20px 20px;
 }
-.cta-button {
+.btn {
     padding: 18px 17px 15px 18px;
     border-radius: 6px;
-    background-color: white;
+    background-color: var(--neutral-0);
     border: 1px solid var(--neutral-900);
     color: var(--neutral-900);
-    font-weight: bold;
+    font-weight:700;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: -0.16px;
+}
+.btn-primary {
+    background-color: var(--neutral-0);
+}
+.btn-secondary {
+    background-color: var(--neutral-900);
+    color: var(--neutral-0);
+}
+.hero {
+    margin: 20px 20px;
+}
+h1 {
+    color: var(--neutral-900);
+    font-size: 38px;
+    letter-spacing: -0.53px;
+    font-weight: 400;
+}
+.hero p {
+    color: var(--neutral-500);
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: -0.1px;
+}
+.hero-title-accent {
+    font-weight: 700;
+    font-size: 38px;
+    letter-spacing: -0.53px;
 }
 
   @media (min-width: 768px) {
