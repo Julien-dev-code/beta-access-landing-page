@@ -80,7 +80,52 @@ h1 {
     line-height: 150%;
     text-transform: uppercase;
 }
+.testimonial-card {
+    background-color: var(--neutral-900);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 300px;
+}
+.testimonial-image-wrapper {
+    position: absolute;
+    top: -200px;
+    display: block;
+    margin: 0 auto;
+}
+.testimonial-content {
+    margin: 20px 20px;
+}
+.testimonial-image {
+    display: block;
+    margin: 0 auto;
+}
+.testimonial-title {
+    color: var(--neutral-0);
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+.testimonial-title span {
+    font-weight: 700;
+}
+.testimonial-quote {
+    color: var(--neutral-200);
+    font-size: 20px;
+    line-height: 160%;
+    font-weight: 400;
 
+}
+.testimonial-author span {
+    color: var(--neutral-200);
+}
+.testimonial-author strong {
+    text-transform: uppercase;
+    color: var(--neutral-0);
+}
 
   @media (min-width: 768px) {
     .container {
