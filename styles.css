@@ -149,6 +149,25 @@ h1 {
 }
   @media (min-width: 768px) {
     .container {
-        width: 718px;
+        max-width: 1110px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .testimonial-section {
+        max-width: 1110px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .testimonial-card {
+        
+    }
+    .testimonial-card img {
+
     }
 }
