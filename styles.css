@@ -8,11 +8,15 @@ body {
     font-family: epilogue;
     background-color: var(--neutral-0);
 }
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 20px;
+    padding: 20px 0;
 }
 .btn {
     padding: 18px 17px 15px 18px;
@@ -33,7 +37,6 @@ body {
     color: var(--neutral-0);
 }
 .hero {
-    margin: 20px 20px;
     margin-top: 60px;
 }
 h1 {
@@ -55,9 +58,11 @@ h1 {
 }
 .stats {
     text-align: center;
+    margin-bottom: 140px;
+    
 }
 .stats img {
-    margin-top: 40px;
+    margin-top: 80px;
 }
 .stats-item {
     display: flex;
@@ -80,27 +85,25 @@ h1 {
     line-height: 150%;
     text-transform: uppercase;
 }
-.testimonial-card {
-    background-color: var(--neutral-900);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    border-radius: 15px;
-    position: relative;
-    margin-top: 300px;
+.testimonial-section {
+    margin-top: 200px;
 }
-.testimonial-image-wrapper {
+.testimonial-card {
+    
+    position: relative;
+    background-color: var(--neutral-900);
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 160px; /* espace pour la tête */
+}
+.testimonial-image {
     position: absolute;
     top: -200px;
-    display: block;
-    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .testimonial-content {
     margin: 20px 20px;
-}
-.testimonial-image {
-    display: block;
-    margin: 0 auto;
 }
 .testimonial-title {
     color: var(--neutral-0);
@@ -126,7 +129,24 @@ h1 {
     text-transform: uppercase;
     color: var(--neutral-0);
 }
-
+.footer-container {
+    text-align: center;
+    margin-top: 80px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer-copyright {
+    color: var(--neutral-500);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%;
+}
+.footer-socials-links a {
+    margin: 0 20;
+}
   @media (min-width: 768px) {
     .container {
         width: 718px;
