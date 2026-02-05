@@ -169,6 +169,14 @@ h1 {
         margin-right: 60px;
 
     }
+    .btn-primary:hover {
+        background-color: var(--neutral-900);
+        color:var(--neutral-0);
+    }
+    .btn-secondary:hover {
+        background: linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%);
+        border: none;
+    }
     h1 {
         color: var(--neutral-900);
         font-size: 72px;
@@ -199,9 +207,6 @@ h1 {
     .stats-label {
         text-align: left;
     }
-
-
-   
     .container {
         max-width: 1110px;
         margin-left: auto;
