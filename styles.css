@@ -35,9 +35,13 @@ body {
 .btn-secondary {
     background-color: var(--neutral-900);
     color: var(--neutral-0);
+    margin-bottom: 60px;
 }
 .hero {
     margin-top: 60px;
+}
+.hero__image {
+    width: 100%;
 }
 h1 {
     color: var(--neutral-900);
@@ -68,6 +72,8 @@ h1 {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
+
+    
 }
 .stats-value {
     color:var(--neutral-900);
@@ -76,6 +82,7 @@ h1 {
     font-weight: 700;
     line-height: 120%;
     letter-spacing: -0.5px;
+    
 }
 .stats-label {
     color: var(--neutral-500);
@@ -84,6 +91,7 @@ h1 {
     font-weight: 400;
     line-height: 150%;
     text-transform: uppercase;
+    
 }
 .testimonial-section {
     margin-top: 200px;
@@ -145,9 +153,55 @@ h1 {
     line-height: 160%;
 }
 .footer-socials-links a {
-    margin: 0 20;
-}
+        margin-left: 20px;
+    }
+
   @media (min-width: 768px) {
+    .hero-section {
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
+        
+    }
+    .hero {
+        align-self: center;
+        width: 35%;
+        margin-right: 60px;
+
+    }
+    h1 {
+        color: var(--neutral-900);
+        font-size: 72px;
+        letter-spacing: -0.53px;
+        font-weight: 400;
+        position: absolute;
+        top: 160px;
+
+    }
+    .hero p {
+        padding-bottom: 30px;
+    }
+    .hero-title-accent {
+        font-weight: 700;
+        font-size: 72px;
+        letter-spacing: -0.53px;
+    }
+    .stats {
+        align-self: center;
+        width: 35%;
+    }
+    .stats-item {
+        margin-left: 80px;
+    }
+    .stats-value {
+        text-align: left;
+    }
+    .stats-label {
+        text-align: left;
+    }
+
+
+   
     .container {
         max-width: 1110px;
         margin-left: auto;
@@ -197,6 +251,9 @@ h1 {
         display: flex;
         flex-direction: row;
         justify-content: space-between
+    }
+    .footer-socials-links a {
+        margin-left: 20px;
     }
    
 }
