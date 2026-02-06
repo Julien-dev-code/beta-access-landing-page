@@ -54,6 +54,7 @@ h1 {
     font-size: 18px;
     line-height: 160%;
     letter-spacing: -0.1px;
+    padding-bottom: 30px;
 }
 .hero-title-accent {
     font-weight: 700;
@@ -72,8 +73,6 @@ h1 {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-
-    
 }
 .stats-value {
     color:var(--neutral-900);
@@ -82,7 +81,6 @@ h1 {
     font-weight: 700;
     line-height: 120%;
     letter-spacing: -0.5px;
-    
 }
 .stats-label {
     color: var(--neutral-500);
@@ -94,10 +92,9 @@ h1 {
     
 }
 .testimonial-section {
-    margin-top: 200px;
+    margin-top: 300px;
 }
 .testimonial-card {
-    
     position: relative;
     background-color: var(--neutral-900);
     border-radius: 15px;
@@ -157,17 +154,22 @@ h1 {
     }
 
   @media (min-width: 768px) {
-    .hero-section {
+    .hero-section .container {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        margin-top: 60px;
+        gap: 60px;
+        position: relative;
         
     }
+    .hero-section {
+        position: relative;
+        margin-top: 60px;
+    }
     .hero {
-        align-self: center;
         width: 35%;
-        margin-right: 60px;
-
+        position: relative;
+        z-index: 3;
     }
     .btn-primary:hover {
         background-color: var(--neutral-900);
@@ -177,17 +179,33 @@ h1 {
         background: linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%);
         border: none;
     }
-    h1 {
+    .hero h1 {
         color: var(--neutral-900);
         font-size: 72px;
         letter-spacing: -0.53px;
         font-weight: 400;
         position: absolute;
-        top: 160px;
-
+        top: -180px;
+        left: 0;
+        width: 160%;
     }
     .hero p {
-        padding-bottom: 30px;
+        margin-top: 220px; 
+        margin-bottom: 30px;
+    }
+    .hero-picture {
+        width: 30%;   /* taille exacte desktop */
+        position: relative;
+        z-index: 1;
+        
+    }
+    .hero-picture img {
+        width: 350px;
+        height: 600px;
+        object-fit: cover;
+    }
+    .hero p {
+        margin: 30px 0;
     }
     .hero-title-accent {
         font-weight: 700;
@@ -195,13 +213,16 @@ h1 {
         letter-spacing: -0.53px;
     }
     .stats {
-        align-self: center;
-        width: 35%;
+        width: 15%;
+        text-align: left;
+        margin-top: 60px;
     }
     .stats-item {
-        margin-left: 80px;
+        gap: 5px;
+        padding-bottom: 30px;
     }
-    .stats-value {
+    .stats-value,
+    .stats-label {
         text-align: left;
     }
     .stats-label {
@@ -223,7 +244,7 @@ h1 {
         
     }
     .testimonial-card {
-        height: 280px;
+        height: 380px;
         display: flex;
         align-items: center;
         justify-content: center;
